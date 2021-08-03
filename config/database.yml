@@ -8,12 +8,11 @@ default: &default
   adapter: postgresql
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
-  password: 'bandogato60'
+  password: marcos39
 
 development:
   <<: *default
   database: db/development.postgresql
-  password: 'bandogato60'
 
 
 # Warning: The database defined as "test" will be erased and
@@ -22,11 +21,11 @@ development:
 test:
   <<: *default
   database: db/test.postgresql
-  password: 'bandogato60'
+  
 
 
 production:
   <<: *default
   database: db/production.postgresql
-  password: 'bandogato60'
+  
 
