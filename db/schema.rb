@@ -12,6 +12,10 @@
 
 ActiveRecord::Schema.define(version: 2021_06_25_102217) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "adminpack"
+  enable_extension "plpgsql"
+
   create_table "events", force: :cascade do |t|
     t.string "event_type"
     t.date "event_date"
