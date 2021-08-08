@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = () => (
   <header>
-    <h1>Restaurantes de Barcelona</h1>
+    <h1>Restaurantes de Barcelona para Belu y Marcos</h1>
   </header>
 );
 
